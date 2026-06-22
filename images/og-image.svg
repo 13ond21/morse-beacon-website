@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffe08a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#070b12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe08a"/>
+      <stop offset="100%" stop-color="#f5a623"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070b12"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="900" cy="280" r="120" fill="url(#accent)" opacity="0.9"/>
+  <circle cx="900" cy="280" r="150" fill="none" stroke="#f5a623" stroke-width="4" opacity="0.35"/>
+  <text x="120" y="220" fill="#f3f4f6" font-family="Inter,Segoe UI,sans-serif" font-size="72" font-weight="700">Morse Beacon</text>
+  <text x="120" y="290" fill="#9ca3af" font-family="Inter,Segoe UI,sans-serif" font-size="34">Camera LED Morse Code Flasher</text>
+  <text x="120" y="380" fill="#ffe08a" font-family="ui-monospace,Menlo,monospace" font-size="42" letter-spacing="6">... --- ...</text>
+  <text x="120" y="450" fill="#9ca3af" font-family="Inter,Segoe UI,sans-serif" font-size="26">Private · No ads · Android</text>
+</svg>
