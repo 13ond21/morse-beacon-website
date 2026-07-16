@@ -208,50 +208,81 @@ h1 em {
   color: var(--text);
 }
 
-.phone-mock {
-  background: radial-gradient(circle at 50% 35%, rgba(245, 166, 35, 0.25), transparent 55%),
-    linear-gradient(180deg, #1a2332, #070b12);
-  border: 1px solid var(--border);
+/* Device frames — real Samsung screenshots */
+.phone-frame {
+  position: relative;
+  margin: 0 auto;
+  background: #0a0e14;
+  border: 3px solid #2a3344;
+  border-radius: 36px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 28px 70px rgba(0, 0, 0, 0.55),
+    0 0 80px rgba(245, 166, 35, 0.08);
+  overflow: hidden;
+}
+
+.phone-frame-hero {
+  width: min(300px, 100%);
+  max-width: 300px;
+}
+
+.phone-frame-sm {
+  width: 100%;
+  max-width: 220px;
   border-radius: 28px;
-  padding: 36px;
-  box-shadow: var(--shadow);
-  text-align: center;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-width: 2px;
 }
 
-.beacon-ring {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ffe08a, #f5a623 55%, #1a2332 70%);
-  box-shadow: 0 0 60px rgba(245, 166, 35, 0.45);
+.phone-notch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 22px;
+  background: #0a0e14;
+  border-radius: 0 0 14px 14px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.phone-frame img,
+.phone-screen {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.screens-section {
+  background: linear-gradient(180deg, rgba(26, 35, 50, 0.4), transparent);
+}
+
+.shot-row {
   display: grid;
-  place-items: center;
-  font-size: 3rem;
-  animation: pulse 2.4s ease-in-out infinite;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 28px 18px;
+  justify-items: center;
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 40px rgba(245, 166, 35, 0.35); }
-  50% { transform: scale(1.04); box-shadow: 0 0 70px rgba(245, 166, 35, 0.55); }
-}
-
-.mock-text {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  color: var(--accent-soft);
-  letter-spacing: 0.12em;
-  font-size: 1.05rem;
+.shot-card {
   margin: 0;
+  text-align: center;
+  max-width: 220px;
 }
 
-.mock-sub {
+.shot-card figcaption {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
   color: var(--muted);
-  margin-top: 10px;
-  font-size: 0.9rem;
+}
+
+.shot-card:hover .phone-frame {
+  border-color: rgba(245, 166, 35, 0.45);
+  transform: translateY(-4px);
+  transition: border-color 0.2s, transform 0.2s;
 }
 
 .proof-bar {
