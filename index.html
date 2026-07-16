@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Morse Beacon — Camera LED Morse Code Flasher</title>
-  <meta name="description" content="Morse Beacon turns your text into Morse code flashes using your phone's camera LED. Premium Android app with adjustable speed, no ads, and full privacy.">
-  <meta name="keywords" content="morse code, flashlight morse, camera LED, morse flasher, SOS signal, morse transmitter, android morse app">
-  <meta name="author" content="Morse Beacon">
+  <title>Morse Beacon — Camera LED Morse Code Flasher for Android</title>
+  <meta name="description" content="Flash Morse code with your camera LED. Learn mode, tap decode, adjustable WPM. Free with ads — or Premium one-time for ad-free Morse forever.">
+  <meta name="keywords" content="morse code, flashlight morse, camera LED, morse flasher, SOS signal, morse transmitter, android morse app, learn morse">
+  <meta name="author" content="LuckyTools">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070b12">
   <link rel="canonical" href="https://13ond21.github.io/morse-beacon-website/">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://13ond21.github.io/morse-beacon-website/sitemap.xml">
   <link rel="stylesheet" href="css/style.css">
@@ -15,15 +16,15 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Morse Beacon">
-  <meta property="og:title" content="Morse Beacon — Camera LED Morse Code Flasher">
-  <meta property="og:description" content="Type a message. Flash it in Morse code with your camera LED. No ads. Private.">
+  <meta property="og:title" content="Morse Beacon — Flash Morse with your camera LED">
+  <meta property="og:description" content="Type a message. Flash it in Morse. Learn mode, tap decode, Premium ad-free. Free on Google Play.">
   <meta property="og:url" content="https://13ond21.github.io/morse-beacon-website/">
   <meta property="og:image" content="https://13ond21.github.io/morse-beacon-website/images/og-image.svg">
   <meta property="og:locale" content="en_GB">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Morse Beacon — Camera LED Morse Code Flasher">
-  <meta name="twitter:description" content="Turn text into Morse code LED flashes on Android.">
+  <meta name="twitter:title" content="Morse Beacon — Camera LED Morse Code">
+  <meta name="twitter:description" content="Turn text into Morse LED flashes on Android. Free + optional Premium.">
   <meta name="twitter:image" content="https://13ond21.github.io/morse-beacon-website/images/og-image.svg">
 
   <script type="application/ld+json">
@@ -44,18 +45,17 @@
         "name": "Morse Beacon",
         "operatingSystem": "Android",
         "applicationCategory": "UtilitiesApplication",
-        "description": "Convert text to Morse code and transmit via camera LED flash.",
+        "description": "Convert text to Morse code and transmit via camera LED flash. Learn mode, tap decode, freemium Premium unlock.",
         "offers": {
           "@type": "Offer",
-          "price": "0.99",
+          "price": "0",
           "priceCurrency": "GBP",
           "url": "https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon"
         },
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon",
-        "installUrl": "https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon",
         "author": {
           "@type": "Organization",
-          "name": "Morse Beacon",
+          "name": "LuckyTools",
           "email": "support.morsebeacon@gmail.com"
         }
       }
@@ -64,6 +64,8 @@
   </script>
 </head>
 <body>
+  <div class="page-glow" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
@@ -72,10 +74,11 @@
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
+        <a href="#why">Why us</a>
+        <a href="#premium">Premium</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon">Get free</a>
       </nav>
     </div>
   </header>
@@ -84,82 +87,154 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">Android · Camera LED · Morse Code</span>
-          <h1>Flash your message in Morse code</h1>
-          <p>
-            Morse Beacon converts any text into precise Morse code signals using your
-            phone's camera LED. Perfect for learning, signalling, or emergency SOS —
-            with a polished interface and complete privacy.
+          <span class="eyebrow">Android · Free with ads · Optional Premium</span>
+          <h1>Flash your message in <em>Morse code</em></h1>
+          <p class="hero-lead">
+            Morse Beacon turns any text into precise camera-LED signals — with live preview,
+            learn mode, and a tap-to-decode pad. Built private-first: your messages stay on
+            your phone. Free forever, or unlock Premium once for zero ads.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon">Get on Google Play</a>
-            <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon">
+              Get free on Google Play
+            </a>
+            <a class="btn btn-secondary" href="#premium">See Premium</a>
           </div>
+          <dl class="stats">
+            <div><dt>LED</dt><dd>torch Morse</dd></div>
+            <div><dt>Learn</dt><dd>quiz + chart</dd></div>
+            <div><dt>Tap</dt><dd>decode pad</dd></div>
+            <div><dt>£0</dt><dd>to start</dd></div>
+          </dl>
         </div>
         <div class="phone-mock" aria-hidden="true">
           <div class="beacon-ring">⚡</div>
           <p class="mock-text">... --- ...</p>
-          <p style="color: var(--muted); margin-top: 8px;">SOS · 15 WPM</p>
+          <p class="mock-sub">SOS · 15 WPM · Flash ready</p>
         </div>
+      </div>
+    </section>
+
+    <section class="proof-bar">
+      <div class="container proof-inner">
+        <span>No account</span>
+        <span class="dot">·</span>
+        <span>Messages stay on-device</span>
+        <span class="dot">·</span>
+        <span>No subscription required</span>
+        <span class="dot">·</span>
+        <span>Premium = one-time unlock</span>
       </div>
     </section>
 
     <section id="features">
       <div class="container">
+        <p class="kicker">What you get free</p>
         <h2 class="section-title">Built for clarity and control</h2>
         <p class="section-lead">
-          Every dot and dash is timed to international Morse standards. Adjust speed,
-          spacing, and playback to match your needs.
+          Most flashlight Morse apps stop at “type and flash.” We add learning tools,
+          standards-based timing, and a clean dark UI that feels like a real utility.
         </p>
         <div class="features-grid">
           <article class="feature-card">
             <h3>Camera LED output</h3>
-            <p>Uses your device's torch for bright, visible Morse transmission. No photos are taken or stored.</p>
+            <p>Bright torch transmission timed to international Morse standards. No photos are taken or stored.</p>
           </article>
           <article class="feature-card">
             <h3>Live Morse preview</h3>
-            <p>See the exact dot-dash pattern before you transmit, with support for letters, numbers, and punctuation.</p>
+            <p>See the exact dot-dash pattern before you transmit — letters, numbers, and punctuation.</p>
           </article>
           <article class="feature-card">
             <h3>Adjustable speed</h3>
-            <p>Set words-per-minute from 5 to 40, with optional Farnsworth timing for easier learning.</p>
+            <p>5–40 WPM with optional Farnsworth timing and gap spacing for learners and operators.</p>
           </article>
           <article class="feature-card">
             <h3>Learn mode</h3>
-            <p>Quiz yourself with LED flashes, practice any character on a grid, and browse a full Morse chart.</p>
+            <p>Quiz with LED flashes, practice any character, and browse a full Morse reference chart.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Tap decode</h3>
+            <p>Practice receiving: tap Dit and Dah, lock letters and words — free for everyone.</p>
           </article>
           <article class="feature-card">
             <h3>Quick phrases</h3>
-            <p>One-tap SOS, HELLO, TEST, and CQ presets for fast access to common signals.</p>
+            <p>SOS, HELLO, TEST, CQ, 73, QRZ — one-tap presets when seconds matter.</p>
           </article>
           <article class="feature-card">
             <h3>Screen flash mirror</h3>
-            <p>Visual on-screen beacon mirrors the LED so you can see transmission progress at a glance.</p>
+            <p>On-screen beacon mirrors the LED so you can watch transmission progress at a glance.</p>
           </article>
           <article class="feature-card">
-            <h3>Private by design</h3>
-            <p>No analytics, no ads, no cloud. Your messages stay on your device.</p>
+            <h3>Copy &amp; share Morse</h3>
+            <p>Copy message + Morse pattern to clipboard for notes, logs, or training sheets.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="pricing">
+    <section id="why" class="why-section">
       <div class="container">
-        <h2 class="section-title">Simple, honest pricing</h2>
-        <p class="section-lead">One-time purchase. No subscriptions, no ads, no in-app purchases.</p>
-        <div class="pricing-card">
-          <h3>Morse Beacon</h3>
-          <p class="price">£0.99 <span>one-time</span></p>
-          <ul style="color: var(--muted); padding-left: 20px;">
-            <li>Unlimited Morse transmissions</li>
-            <li>Learn mode — quiz, practice, and chart</li>
-            <li>Full options and speed control</li>
-            <li>No data collection</li>
-          </ul>
-          <p style="margin-top: 20px;">
-            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon">Download on Google Play</a>
-          </p>
+        <p class="kicker">Why choose Morse Beacon</p>
+        <h2 class="section-title">Reasons users pick us over basic flashers</h2>
+        <div class="compare-grid">
+          <article class="compare-card">
+            <h3>Real learn tools</h3>
+            <p>Quiz, practice grid, chart, and tap-decode — not just a flashlight toggle.</p>
+          </article>
+          <article class="compare-card">
+            <h3>Operator-grade timing</h3>
+            <p>PARIS WPM, Farnsworth, and gap multiplier — for study and field use.</p>
+          </article>
+          <article class="compare-card">
+            <h3>Honest freemium</h3>
+            <p>Core Morse is free. Premium is a <strong>one-time</strong> unlock — no monthly fee to keep flashing.</p>
+          </article>
+          <article class="compare-card">
+            <h3>Privacy-minded</h3>
+            <p>We don’t sell your messages. Free tier uses AdMob; Premium removes ads entirely.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="premium">
+      <div class="container">
+        <p class="kicker">Premium</p>
+        <h2 class="section-title">Pay once. Own the quiet.</h2>
+        <p class="section-lead">
+          Free includes ads (banner + occasional full-screen). Premium removes every ad
+          and unlocks power-user tools — forever on your Google account.
+        </p>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Free</h3>
+            <p class="price">£0 <span>forever</span></p>
+            <ul>
+              <li>Unlimited LED Morse flash</li>
+              <li>Learn mode + tap decode</li>
+              <li>Full speed &amp; Farnsworth controls</li>
+              <li>Quick presets (SOS, CQ, 73…)</li>
+              <li class="muted">Banner ads + interstitials ~every 90s when idle</li>
+            </ul>
+            <p class="pricing-cta">
+              <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon">Download free</a>
+            </p>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge">Best value</span>
+            <h3>Premium</h3>
+            <p class="price">One-time <span>in-app</span></p>
+            <ul>
+              <li><strong>Zero ads</strong> — no banners, no full-screen</li>
+              <li>Unlimited custom phrases</li>
+              <li>Recent message history</li>
+              <li>Everything in Free</li>
+              <li>Support independent development</li>
+            </ul>
+            <p class="pricing-cta">
+              <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.luckytools.morse_beacon">Unlock in app</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -168,8 +243,8 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <p class="section-lead">
-          Questions, feedback, or support? Email
-          <a href="mailto:support.morsebeacon@gmail.com">support.morsebeacon@gmail.com</a>.
+          Questions, feedback, or support?
+          <a href="mailto:support.morsebeacon@gmail.com">support.morsebeacon@gmail.com</a>
         </p>
       </div>
     </section>
@@ -177,7 +252,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span>© 2026 Morse Beacon</span>
+      <span>© 2026 Morse Beacon · LuckyTools</span>
       <span>
         <a href="privacy.html">Privacy</a> ·
         <a href="terms.html">Terms</a> ·

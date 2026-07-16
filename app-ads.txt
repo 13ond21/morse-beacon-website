@@ -1,0 +1,9 @@
+# AdMob app-ads.txt for Morse Beacon
+# Replace PUBLISHER_ID with your AdMob publisher ID (ca-pub-XXXXXXXX).
+# Full line format after AdMob account setup:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# Until real publisher ID is set, Play/AdMob may show incomplete authorization.
+# See play-store-assets/ADMOB_SETUP.md in the app project.
+
+google.com, pub-3940256099942544, DIRECT, f08c47fec0942fa0
